@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Outras Formatacoes</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        color1{
+            color: aqua;
+            padding-left: 2px;
+        }
+        equal{
+            color: white;
+        }
+        color2{
+            color: orange;
+            padding-right: 2px;
+        }
+        mark{
+            background-color: black;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras Formatacoes</h1>
+    
+    <h2>Codigo-Fonte / Pre-Formatacao</h2>
+    <p>O comando <code>document.getElementById('teste')</code> e escrito em linguagem JavaScript. <b>Para usar afonte monoespacada,usa-se a tag &lt;code&gt;.</b></p>
+    <pre>
+        <code>
+    num = int(input('Digite um numero'))
+    if num % 2 ==0:
+        print(f'O numero {num} e PAR')
+    else:
+        print(f'O numero {num} e IMPAR)
+    print('Fim do Programa')
+        </code>
+    </pre>
+    <p><b>Usando a tag &lt;pre&gt;,o texto se mantem com a formatao em que esta escrito na linguagem de marcacao.</b></p>
+    
+    <h2>Citacoes simples</h2>
+    <p>Como diria o pai de uma amigo: <q>o computador e um burro muito rapido.</q>
+    <p><b>Usando a tag &lt;q&gt;.</b></p>
+    
+    <h2>Citacoes Completas</h2>
+    <p>Segundo Amit Goswami, no seu livro O Ativista Quantico:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/O_Ativista_Qu%C3%A2ntico/mBwFCwAAQBAJ?hl=pt-BR&gbpv=1">
+        A fisica quantica, na forma de seu famoso "efeito do observador" (como o ato de ver algo, por parte do observador, trasnforma possibilidades quanticas em experiencias reais na consciencia dele mesmo), esta nos forcando a mudar de paradigma do primado da materia para o do primado da consciencia.
+    </blockquote>
+    <p><b>Usando a tag &lt;blockquote&gt; onde se indica a fonte apontando para um hiperlink dentro de <mark><color1>cite</color1><equal>=</equal><color2>"url"</color2></mark>.</b></p>
+    
+    <h2>Abreviacoes</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <p><b>Para criar esse balao, usa-se a tag &lt;abbr&gt; title="texto do balao"&gt;&lt;Texto que sera exibido na pagina&lt;/abbr&gt;</b></p>
+    
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p><b>Feito com a tag &lt;bdo&gt;</b></p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h1:hover{
+            color: white;
+            background-color: black;
+        }
+        h2{
+            color: white;
+            background-color: black;
+            padding-left: 5px;
+            border-radius: 5px;
+        }
+        h2:hover{
+            color: black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1><abbr title="Cada item da lista,  devera estar dentro da tag &lt;li&gt;">Trabalhando com Listas</abbr></h1>
+    <h2><abbr title="Para criar listas ordenadas, usa a tag &lt;ol&gt;">Listas Ordenadas</abbr></h2>
+    <ol type="1"> <!-- types: 1 - Para lista numerica, A ou a - Para lista alfabetica, I ou i - Para lista em algarismos Romanos-->
+        <li>Acordar</li>
+        <li>Ligar para o Joao</li>
+        <li>Tomar cafe</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almocar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2><abbr title="Para criar listas nao ordenadas, usa a tag &lt;ul&gt;">Listas nao ordenadas</abbr></h2>
+    <ul type="square"> <!-- types: disc, circle, square -->
+        <li>Pao</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijao</li>
+    </ul>
+    <h2><abbr title="Para usar a contagem que nao seja numerica, basta inserir type dentro da tag de abertura da listagem. Para continuar a contagem de onde parou na proxima listagem, basta inserir start dentro da tag de abertura. Esse comando e exclusivamente numerico, independente do sistema escolhido para a listagem.">Minhas linguagens favoritas</abbr></h2>
+    <ol>
+        <li>Antigas:</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas:</li>
+        <ol type="a" start="5"> <!-- Comando "start" segue o padrao numerico -->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2><abbr title="Para criar listas dentro de listas, basta colocar listas &lt;ol&gt; ou &lt;ul&gt; dentro da lista principal.">Meus Jogos Favoritos</abbr></h2>
+    <ol>
+        <li>Mega Drive</li>
+        <ul type="disc">
+            <li>Sonic 3</li>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="disc">
+            <li>Super Mario</li>
+            <ul type="circle">
+                <li>Super Mario World</li>
+                <li>Super MarioKart</li>
+            </ul>
+            <li>Killer Instinct</li>
+        </ul>
+        <li>PlayStation 1</li>
+        <ul type="disc">
+            <li>NFS</li>
+            <li>Tekken</li>
+        </ul>
+    </ol>
+    <h2><abbr title="Para usar listas de definicoes, usa-se a tag &lt;dt&gt; para os objetos a serem definidos e a tag &lt;dd&gt; para as definicoes dos objetos. Todos dentro da tag &lt;dl&gt;">Lista de Definicoes</abbr></h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcacao para a criacao do conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcacao para a criacao do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Liguagem de programacao para a criacao de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Formatacao de Textos</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        mark {
+            background-color: lime;
+        }
+        color{
+            color: red;
+            font-weight: bold;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatacoes</h1>
+
+    <h2>Negrito / Destaque</h2>
+    <li>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;B&gt; (Nao Semantica)</li>
+    <li>Nesta frase temos um <strong>termo em negrito</strong> usando a tag &lt;STRONG&gt; (Semantica)</li>
+    
+    <h2>Italico / Enfase</h2>
+    <li>Nesta frase temos um <i>termo em italico</i> usando a tag &lt;i&gt; (Nao Semantica)</li>
+    <li>Nesta frase temos um <em>termo em enfase</em> usando a tag &lt;em&gt; (Semantica)</li>
+    
+    <h2>Texto Marcado</h2>
+    <li>Podemos criar tambem <mark style="background-color: lime;">um texto marcado</mark> usando a tag &lt;mark&gt; para um estilo  inline.</li>
+    <li>E no outro paragrafo, temos <mark>outro texto marcado</mark> no final. usando a tag &lt;style&gt; dentro da tag &lt;head&gt; para fazer um estilo interno.</li>
+    
+    <h2>Texto grande / pequeno</h2>
+    <li>Estamos criando um <big>texto grande</big> (usando a tag <color>&lt;big&gt;</color>) e um <small>texto pequeno</small> nesse paragrafo (usando a tag &lt;small&gt;). A tag <color>&lt;big&gt;</color> nao e mais usada no HTML 5.</li>
+    
+    <h2>Texto Deletado</h2>
+    <li>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido,  mas nao considerado. Usando a tag &lt;del&gt;.</li>
+    
+    <h2>Texto Inserido e Sublinhado</h2>
+    <li>Podemos marcar <ins>um texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois. Usando a tag &lt;ins&gt;.</li>
+    <li>Existe tambem o <u>sublinhado</u> com a tag &lt;u&gt; (nao semantica)</li>
+    
+    <h2>Texto Sobrescrito</h2>
+    <li>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;</li>
+    
+    <h2>Texto Subscrito</h2>
+    <li>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</li>
+</body>
+</html>

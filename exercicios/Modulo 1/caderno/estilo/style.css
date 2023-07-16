@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color: #22467A;
+}
+
+body > header > h1{
+        background-color: #142947;
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        margin: 0.67em;
+}
+body > nav > a{
+    text-decoration: none;
+}
