@@ -53,6 +53,7 @@ a:hover {
     color: black;
     border-radius: 5px;
     padding: 2px;
+    transition: .5s;
 }
 
 section {
