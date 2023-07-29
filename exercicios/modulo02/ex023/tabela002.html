@@ -19,6 +19,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -34,6 +41,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION 
             THEAD
                 TR,TD, TH
             TBODY
@@ -42,16 +50,15 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Populacao das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posicao</th>
-                <th>Estado</th>
-                <th>Popualcao</th>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 50px;" >Popualcao</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
                 <td>Sao Paulo</td>
                 <td class="num">44.420.459</td>
             </tr>
@@ -162,7 +169,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row" >Total de Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
