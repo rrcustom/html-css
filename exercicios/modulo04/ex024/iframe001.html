@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe { /* As configurações de style prevalecem sobre as configurações direto no html. */
+            width: 400px;
+            height: 400px;
+            border: 1px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando o site do 
-        
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <!-- Tamanho padrão 300x150 -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px" scrolling="no">
+            <a href="https://cursoemvideo.com" target="_blank"></a>
+        </iframe>
 
         para aprender a programar.</p>
 
-        <p>O site do 
+        <p>O Projeto de Cordel 
             
-            <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+            <iframe src="https://rrcustom.github.io/projeto-cordel/" frameborder="1" height="350" width="350" scrolling="yes">
+                <a href="https://rrcustom.github.io/projeto-cordel/" target="_blank"></a>
+            </iframe>
             
-            também é muito legal.</p>
+            feito no CursoemVideo também é muito legal.</p>
 </body>
 </html>
