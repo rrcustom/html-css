@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato-Grosso</option>
+                    <option value="MS">Mato-Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select> 
+                </p>
+                <p>
+                    <label for="iform">Formação:</label>
+                    <input type="text" name="form" id="iform" list="lstform" placeholder="Escolha ou Digite...">
+                    <datalist id="lstform">
+                        <option>Nível Fundamental</option>
+                        <option>Nível Médio</option>
+                        <option>Nível Técnico</option>
+                        <option>Nível Superior Incompleto</option>
+                        <option>Nível Superior Completo</option>
+
+                    </datalist>
+                </p>
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Escolha ou Digite...">
+                    <datalist id="lstprof"> <!-- Essa opção permite digitar, além das opções previamente programadas -->
+                        <option>Administrador</option>
+                        <option>Contabilista</option>
+                        <option>Desenvolvedor</option>
+                        <option>Professor</option>
+                        <option>Técnico</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem:</label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+                </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
