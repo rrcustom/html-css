@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Deleite Chocolateria</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()" >menu</span>
+        <menu id="itens" >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bolos</a></li>
+                <li><a href="#">Doces Finos</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>    
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis nostrum repellat ut omnis ad, quae tempora sapiente deserunt odio facere aspernatur corporis praesentium, animi ex assumenda quod vero neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora dicta enim optio ducimus. Sit voluptatem, recusandae illum at unde maiores nulla quae sunt expedita accusamus nisi animi amet ullam quis!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio doloribus sapiente repudiandae non consequuntur ad iste animi, repellat velit provident autem quod cupiditate illo temporibus nostrum. Fuga, obcaecati. Ea, quisquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo deserunt molestiae illum, pariatur eaque autem aut animi? Aliquam quo quisquam ratione. Iusto autem qui architecto, officiis aut temporibus consequatur aliquid!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptas fuga accusamus delectus, error ea provident doloremque aut quis odit quisquam numquam nam sint autem aliquam ullam illo eum exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non odio eius doloremque a nostrum esse possimus est eveniet eligendi, mollitia quo fugiat dolorum molestiae, porro ut. Repellendus, id asperiores?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
