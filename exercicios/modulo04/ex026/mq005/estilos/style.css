@@ -11,7 +11,7 @@ body, html {
 }
 
 header {
-    background-color: #f4c1bd;
+    background-color: #f8b3ad;
     color: #270d10;
 }
 
@@ -49,7 +49,9 @@ menu > ul > li > a {
     text-align: center;
     background-color: #a65158;
     color: white;
-    margin: 2px 0;
+    margin: 2px 5px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
 }
 
 menu > ul > li > a:hover {
